@@ -11,10 +11,10 @@ router.get ("/", async (req, res) => {
         }
       ]
     });
-    const posts = payload.map((post) => post.get({plain:true}));
+    const blogposts = payload.map((blogpost) => blogpost.get({plain:true}));
 
     res.render('homepage', {
-      posts,
+      blogposts,
       loggedIn: req.session.loggedIn
     });
   } catch (err) {
@@ -33,10 +33,10 @@ router.get("/post/:id", async (req, res) => {
         }
       ]
     });
-    const post = payload.get({plain: true})
+    const blogpost = payload.get({plain: true})
 
     res.render('post', {
-      ...post,
+      ...blogpost,
       loggedIn: req.session.loggedIn
     })
   } catch (err) {

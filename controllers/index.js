@@ -6,7 +6,9 @@ const commentApiRoutes = require("./api/comment-routes")
 const blogpostApiRoutes = require("./api/blogpost-routes")
 
 // Import all html route files here
-const userHtmlRoutes = require("./html/user.html.routes")
+const dashboardHtmlRoutes = require("./dashboard-routes")
+const homepageHtmlRoutes = require("./homepage-routes")
+
 
 
 // Add api routes to the router
@@ -17,7 +19,9 @@ router.use("/api/blogpost", blogpostApiRoutes);
 
 
 // Add html routes to the router
-router.use("/user", userHtmlRoutes);
+router.use("/dashboard", dashboardHtmlRoutes);
+router.use("/homepage", homepageHtmlRoutes);
+
 
 
 module.exports = router;
