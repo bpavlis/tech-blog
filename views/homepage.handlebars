@@ -1,0 +1,9 @@
+<h1>Homepage</h1>
+
+<ul class="post">
+    {{#each blogposts as |blogpost|}}
+    <li>
+        {{> blogpost-info blogpost }}
+    </li>
+    {{/each}}
+</ul>

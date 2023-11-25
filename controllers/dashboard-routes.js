@@ -20,7 +20,7 @@ router.get("/", async (req, res) => {
     });
     const blogposts = payload.map((blogpost) => blogpost.get({ plain: true }));
 
-    res.render('homepage', {
+    res.render('dashboard', {
       blogposts,
       loggedIn: req.session.loggedIn
     });
@@ -59,20 +59,28 @@ router.get("/post/:id", async (req, res) => {
 })
 
 //----------
-router.get('/login', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/')
-    return
-  } else
-    res.render('login')
-})
+// router.get('/login', (req, res) => {
+//   if (req.session.loggedIn) {
+//     res.redirect('/')
+//     return
+//   } else
+//     res.render('login')
+// })
 
-router.get('/signup', (req, res) => {
-  if (req.session.loggedIn) {
-    res.redirect('/')
-    return
-  } else
-    res.render('login')
+// router.get('/signup', (req, res) => {
+//   if (req.session.loggedIn) {
+//     res.redirect('/')
+//     return
+//   } else
+//     res.render('login')
+// })
+
+
+
+router.get('/new', (req, res) => {
+  res.render('addBlogpost', {
+    loggedIn: req.session.loggedIn
+  });
 })
 
 module.exports = router;

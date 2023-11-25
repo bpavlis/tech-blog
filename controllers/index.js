@@ -20,7 +20,7 @@ router.use("/api/blogpost", blogpostApiRoutes);
 
 // Add html routes to the router
 router.use("/dashboard", dashboardHtmlRoutes);
-router.use("/homepage", homepageHtmlRoutes);
+router.use("/", homepageHtmlRoutes);
 
 
 
