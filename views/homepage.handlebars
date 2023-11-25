@@ -2,8 +2,7 @@
 
 <ul class="post">
     {{#each blogposts as |blogpost|}}
-    <li>
-        {{> blogpost-info blogpost }}
-    </li>
+    <li><a href="/post/{{id}}">{{blogName}}</a></li>
+    <p>{{content}} by {{user.name}}</p>
     {{/each}}
 </ul>

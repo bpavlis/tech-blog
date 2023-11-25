@@ -1,4 +1,4 @@
-
+//directs to create blogpost page
 async function createBlogpost(x) {
   x.preventDefault()
   document.location.replace("/dashboard/new")
