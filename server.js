@@ -38,10 +38,10 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(routes);
 
-// const okToSync = (process.env.NODE_ENV === "production") ? false : false;
-// sequelize.sync({ force: okToSync }).then(() => {
-//   app.listen(PORT, () => console.log(`now listening at http://localhost:${PORT}`));
-// });
-app.listen(PORT, () =>
-  console.log(`App listening at http://localhost:${PORT}`)
-);
+const okToSync = (process.env.NODE_ENV === "production") ? false : false;
+sequelize.sync({ force: okToSync }).then(() => {
+  app.listen(PORT, () => console.log(`now listening at http://localhost:${PORT}`));
+});
+// app.listen(PORT, () =>
+//   console.log(`App listening at http://localhost:${PORT}`)
+// );
