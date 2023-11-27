@@ -38,7 +38,7 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use(routes);
 
-const okToSync = (process.env.NODE_ENV === "production") ? false : false;
+const okToSync = (process.env.NODE_ENV === "production") ? false : true;
 sequelize.sync({ force: okToSync }).then(() => {
   app.listen(PORT, () => console.log(`now listening at http://localhost:${PORT}`));
 });
