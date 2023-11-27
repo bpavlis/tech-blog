@@ -9,7 +9,7 @@ Created an E-Commerce Back End app using JS and npm: dotenv, express, mysql2, an
 ## Links
 [GitHub](https://github.com/bpavlis/tech-blog)
 
-[Heroku](https://bpavlis.github.io/tech-blog)
+[Heroku](https://tech-blog-bp-9b4b29536451.herokuapp.com/)
 
 ## Additional Note
 This work was completed partially using the aid of a template given to us by our instructor as well as code from the student-project, he had given us permission to do this.
