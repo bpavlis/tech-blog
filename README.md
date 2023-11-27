@@ -4,7 +4,7 @@
 Created an E-Commerce Back End app using JS and npm: dotenv, express, mysql2, and sequelize.
 
 ## Final Screenshot
-![final screenshot](./images/unit14finalscreenshot.png)
+![final screenshot](./Assets/unit14finalscreenshot.png)
 
 ## Links
 [GitHub](https://github.com/bpavlis/tech-blog)

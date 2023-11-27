@@ -8,13 +8,13 @@ async function addBlogpost(event) {
     headers: {
       'Content-Type': 'application/json'
     }
-  });
+  })
 
 
   if (payload.ok) {
     document.location.replace('/dashboard');
   } else {
-    alert('Failed to create');
+    alert('Failed');
   }
 }
 document.querySelector('.blogpost').addEventListener('submit', addBlogpost);
